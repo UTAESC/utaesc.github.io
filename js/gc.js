@@ -149,7 +149,7 @@
             for(var j = 0, p; j < pgs.length; j++) {
               p = document.createElement('p');
               // Facebook link
-              if(j === pgs.length - 1 && (/^http:\/\/(www\.)?facebook\.com\/events\/\d+\/$/).test(pgs[j])) {
+              if(j === pgs.length - 1 && (/^https?:\/\/(www\.)?facebook\.com\/events\/\d+\/$/).test(pgs[j])) {
                 var a = document.createElement('a');
                 a.setAttribute('href', pgs[j]);
                 a.textContent = 'Join event on Facebook';
